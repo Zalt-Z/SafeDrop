@@ -88,6 +88,7 @@ server_ip = "192.168.19.XXX"  # Update this!
 5. File is decrypted and saved locally.
 
 ## Testing Tips
+* Create a text file (ie. secret.txt) with text like "This is my secret"
 * Use two machines: one for running the server, another for the client GUI.
 * Try corrupting one file component on the server to observe signature failure.
 * Use a unique file name when uploading to avoid overwriting.

@@ -90,6 +90,7 @@ def download_and_verify():
             k: base64.b64decode(files[k]) for k in files
         }
 
+        print(f"[+] Decrypting and verifying {filename}")
         #Call decryption & verification function
         plaintext, verified = verify_and_decrypt(
             decoded_parts['cipher'],
