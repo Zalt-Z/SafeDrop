@@ -9,6 +9,7 @@ from cryptography.hazmat.primitives.asymmetric import utils
 
 import secrets  #For secure AES key/IV generation
 
+# *** This was coded by Deevashz S/O Danabal ***
 #Load RSA Public Key (for encrypting AES key)
 def load_rsa_public_key(path):
     with open(path, "rb") as f:
@@ -139,6 +140,7 @@ def verify_and_decrypt(ciphertext, iv, encrypted_key, signature, receiver_privat
 
     return plaintext, verified
 
+# *** This was coded by Deevashz S/O Danabal ***
 #Reusable modular debug function
 def debug_print_bytes(label, byte_data):
     print(f"\n[DEBUG] {label} ({len(byte_data)} bytes):")
