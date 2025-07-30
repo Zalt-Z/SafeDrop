@@ -1,3 +1,5 @@
+#This file was coded by Lin Tze Jay Gregory
+
 #Only need to run the key generation once, so treat this script as a setup tool
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization

@@ -19,6 +19,8 @@ def load_rsa_private_key(path):
     with open(path, "rb") as f:
         return serialization.load_pem_private_key(f.read(), password=None)
 
+# *** The encrypt_and_sign module was coded by Deevashz S/O Danabal ***
+
 #AES encryption + RSA signature
 def encrypt_and_sign(filepath, sender_private_path, receiver_public_path):
     #Load file to encrypt
@@ -79,6 +81,8 @@ def encrypt_and_sign(filepath, sender_private_path, receiver_public_path):
         "signature": signature
     }
 
+
+# *** The encrypt_and_sign module was coded by Aliya Alwani Binte Ismail ***
 
 def verify_and_decrypt(ciphertext, iv, encrypted_key, signature, receiver_private_path, sender_public_path):
     #Load keys

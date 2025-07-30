@@ -1,3 +1,4 @@
+#This file was coded by Angus Kalie Wight
 from flask import Flask, request, jsonify, send_file
 import os
 import base64
