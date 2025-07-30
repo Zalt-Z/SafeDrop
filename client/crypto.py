@@ -131,6 +131,7 @@ def verify_and_decrypt(ciphertext, iv, encrypted_key, signature, receiver_privat
     
     print(f"\n[DEBUG] Decrypted plaintext: {len(plaintext)} bytes")
     print(f"[DEBUG] Decrypted plaintext content: {plaintext}")
+    print("-"*50)
 
     return plaintext, verified
 
